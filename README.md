@@ -1,6 +1,8 @@
 # Ethical-Hacking-Task-01
 
 Objective
+
+
 The purpose of this task is to understand the first phase of Ethical Hacking — Reconnaissance
 (Information Gathering). Every penetration test begins by collecting publicly available information about a target. In this task,
 you will perform passive reconnaissance only, using publicly available sources.
@@ -147,6 +149,8 @@ CDN--
 Part E: HTTP Security Headers --
 
 
+
+
 | **HTTP Security Header**         | **Present (Yes/No)** | **Purpose**                                                                                           |
 | -------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
 | Content-Security-Policy (CSP)    | Yes                  | Prevents attacks such as Cross-Site Scripting (XSS) by controlling which content sources are allowed. |
@@ -154,3 +158,61 @@ Part E: HTTP Security Headers --
 | X-Content-Type-Options           | Yes                  | Stops browsers from MIME type sniffing, reducing the risk of malicious file execution.                |
 | Strict-Transport-Security (HSTS) | Yes                  | Forces browsers to use HTTPS, protecting users from downgrade and man-in-the-middle attacks.          |
 | Referrer-Policy                  | Yes                  | Controls how much referrer information is shared when users navigate to other websites.               |
+
+
+
+Part F: Robots.txt & Sitemap Analysis --
+
+
+ 1. Robots.txt
+
+URL:https://github.com/robots.txt
+
+Does the website have a robots.txt file?
+**Yes**
+
+Information Learned:
+
+* GitHub provides a publicly accessible `robots.txt` file.
+* It contains instructions for search engine crawlers.
+* Some directories and pages are restricted from indexing.
+* The file helps search engines crawl the website more efficiently.
+* It is not a security mechanism; it only provides crawler guidance.
+
+Screenshot
+
+<img width="1907" height="966" alt="robots" src="https://github.com/user-attachments/assets/b7fafbe0-8ae5-4096-82ca-87ccee6beb6b" />
+
+
+2. Sitemap.xml
+
+URL: https://github.com/sitemap.xml
+
+Does the website have a sitemap?
+**No** 
+
+GitHub does not provide a public sitemap at this URL. Visiting it returns a **404 Not Found** page.
+
+Information Learned:
+
+* No public sitemap is available at the standard location.
+* GitHub may use other methods to help search engines discover and index its content.
+* The absence of a public sitemap does not affect the normal operation or accessibility of the website.
+
+Screenshot
+
+<img width="935" height="810" alt="sitmap" src="https://github.com/user-attachments/assets/892ff729-8b8a-4980-a3a3-9361ff011cd4" />
+
+
+
+Part G: Reconnaissance Report --
+
+
+
+GitHub (https://github.com) was selected as the target because it is a widely used public software development platform suitable for passive reconnaissance. WHOIS lookup revealed domain registration details, registrar information, name servers, and domain status. DNS analysis identified A, MX, NS, and TXT records, providing insight into GitHub's network infrastructure and email configuration. Technology fingerprinting showed the use of modern web technologies, including web servers, CDNs, cloud infrastructure, and security mechanisms. HTTP security header analysis confirmed the presence of Content-Security-Policy (CSP), X-Frame-Options, X-Content-Type-Options, Strict-Transport-Security (HSTS), and Referrer-Policy, demonstrating strong protection against common web attacks. The robots.txt file contained crawler directives and referenced a sitemap to improve search engine indexing. Overall, this exercise demonstrated how valuable information can be gathered using passive reconnaissance without interacting with the target system. It emphasized the importance of ethical information gathering, responsible security practices, and understanding publicly available infrastructure before conducting authorized penetration testing.
+
+
+
+Detaied  explaining what i learned during the reconnaissance phase  is attached  in the given PDF
+
+Reconnaissance Report.pdf
