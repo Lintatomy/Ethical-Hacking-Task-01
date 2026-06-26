@@ -169,7 +169,10 @@ Part F: Robots.txt & Sitemap Analysis --
 URL:https://github.com/robots.txt
 
 Does the website have a robots.txt file?
+
+
 **Yes**
+
 
 Information Learned:
 
@@ -189,6 +192,8 @@ Screenshot
 URL: https://github.com/sitemap.xml
 
 Does the website have a sitemap?
+
+
 **No** 
 
 GitHub does not provide a public sitemap at this URL. Visiting it returns a **404 Not Found** page.
