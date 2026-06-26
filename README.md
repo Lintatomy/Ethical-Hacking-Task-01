@@ -215,4 +215,4 @@ GitHub (https://github.com) was selected as the target because it is a widely us
 
 Detaied  explaining what i learned during the reconnaissance phase  is attached  in the given PDF
 
-(Reconnaissance Report.pdf)
+(PART G- Reconnaissance Report.pdf)
